@@ -5,12 +5,12 @@ import random
 def number_game():
     print("===== 번호 맞히기 게임 =====")
 
-    answer = random.randint(1, 100)
+    answer = random.randint(1, 200)
     attempts = 0
 
     while True:
         try:
-            guess = int(input("1~100 사이 숫자를 입력하세요: "))
+            guess = int(input("1~200 사이 숫자를 입력하세요: "))
             attempts += 1
 
             if guess < answer:
